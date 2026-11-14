@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Functions In JS</title>
+        <style>
+            body {
+                background-color: rgb(238, 238, 108);
+                color: rgb(240, 47, 47);
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Operators In JavaScript➕➖✖️➗</h1>
+        <h2>The Basic Calculator</h2>
+        
+        Enter First Number : 
+        <input type="number" id="num1">
+        <br><br>
+        Enter Second Number :
+        <input type="number" id="num2">
+        <br><br>
+
+        <p id="result"></p>
+
+        <button onclick="ADD()">+</button>
+        <Script>
+            function ADD(a,b) {
+                var a = Number(document.getElementById("num1").value);
+                var b = Number(document.getElementById("num2").value);
+
+                var sum = a + b;
+
+                document.getElementById("result").innerHTML = "sum = " + sum
+            }
+        </Script>
+
+        <button onclick="MINUS()">-</button>
+        <Script>
+            function MINUS(a,b) {
+                var a = Number(document.getElementById("num1").value);
+                var b = Number(document.getElementById("num2").value);
+
+                var difference = a - b;
+
+                document.getElementById("result").innerHTML = "difference = " + difference
+
+            }
+        </Script>
+
+        <button onclick="MULTIPLY()">×</button>
+        <Script>
+            function MULTIPLY(a,b) {
+                var a = Number(document.getElementById("num1").value);
+                var b = Number(document.getElementById("num2").value);
+
+                var product = a * b;
+
+                document.getElementById("result").innerHTML = "product = " + product
+            }
+        </Script>
+
+        <button onclick="DIVIDE()">÷</button>
+        <Script>
+            function DIVIDE(a,b) {
+                var a = Number(document.getElementById("num1").value);
+                var b = Number(document.getElementById("num2").value);
+
+                var quotient = a / b;
+
+                document.getElementById("result").innerHTML = "quotient = " + quotient
+            }
+        </Script>
+    </body>
+</html>

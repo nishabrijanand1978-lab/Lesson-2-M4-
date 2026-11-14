@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button {
+                background-color: lightcoral;
+                color: rgb(175, 7, 63);
+            }
+        </style>
+    </head>
+
+    <body>
+        <button type="buttton" onclick="NewFunction()">Click Me!!</button>
+        <p id="Para"></p>
+        <p id="Para2"></p>
+        <p id="Para3"></p>
+
+        <script>
+            var a = 5;
+            function NewFunction() {
+                var b = 4;
+                document.getElementById("Para").innerHTML = a * b;
+            }
+
+            document.getElementById("Para2").innerHTML = b;
+            document.getElementById("Para3").innerHTML = a;
+        </script>
+    </body>
+</html>
